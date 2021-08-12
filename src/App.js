@@ -1,8 +1,12 @@
 import user from './user.json';
 import statics from './statistical.json';
 import Profile from './ProfileComponent/Profile';
+import FriendsList from './friends.json';
 import './App.css';
 import Statistical from './Statistical/Statistical';
+import Friends from './friends/Friends';
+import transactionHistory from './transaction.json';
+import Transaction from './transaction/Transaction';
 
 function App() {
   return (
@@ -14,7 +18,10 @@ function App() {
   stats={user.stats}
 />
 <Statistical title="Upload stats" stats={statics} />
-<Statistical stats={statics} /></div>
+<Statistical stats={statics} />
+<Friends items={FriendsList}/>
+<Transaction items={transactionHistory}/>
+</div>
   );
 }
 export default App;
