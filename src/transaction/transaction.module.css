@@ -1,0 +1,18 @@
+.transaction {
+  border: 1px solid blue;
+  width: 60%;
+}
+.tr {
+  text-align: center;
+  width: 500px;
+  border: 1px solid blue;
+  color: blueviolet;
+}
+.td {
+  border: 1px solid blue;
+  color: chocolate;
+}
+.th {
+  color: crimson;
+  border-right: 1px solid blue;
+}

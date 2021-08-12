@@ -10,7 +10,15 @@ import Transaction from './transaction/Transaction';
 
 function App() {
   return (
-  <div><Profile
+    <div style={{
+      padding: '50px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column'
+
+    }
+  }><Profile
   name={user.name}
   tag={user.tag}
   location={user.location}

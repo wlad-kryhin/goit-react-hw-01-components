@@ -1,0 +1,22 @@
+.profile {
+  border: 1px solid black;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+}
+.profile__img {
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+}
+.profile__desc {
+  color: crimson;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,10 @@
+.static {
+  width: 80%;
+  height: 200px;
+}
+.title {
+  width: 100%;
+}
+.list {
+  display: flex;
+}
