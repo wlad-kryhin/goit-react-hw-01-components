@@ -3,7 +3,7 @@ import styles from './profile.module.css'
 export default function Profile({name,tag,location,avatar,stats}){
     return (
         <div className={styles.profile}>
-  <div class="description">
+  <div className={styles.topProfile}>
     <img
       src={avatar}
       alt={name}
@@ -15,15 +15,15 @@ export default function Profile({name,tag,location,avatar,stats}){
   </div>
 
   <ul  className={styles.profile__desc}>
-    <li>
+          <li className={styles.profile__item}>
       <span class="label">Followers</span>
                     <span class="quantity">{stats.followers}</span>
     </li>
-    <li>
+    <li className={styles.profile__item}>
       <span class="label">Views</span>
                     <span class="quantity">{stats.views}</span>
     </li>
-    <li>
+    <li className={styles.profile__item}>
       <span class="label">Likes</span>
                     <span class="quantity">{stats.likes}</span>
     </li>
