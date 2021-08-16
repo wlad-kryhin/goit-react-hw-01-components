@@ -4,11 +4,10 @@ import styles from './friends.module.css'
 export default function Friends({items}){
     return(
         <ul className={styles.card__list}>
-  {items.map(friend => <FriendItem id={friend.id} author={friend.name} avatar={friend.avatar} isOnline={friend.isOnline}/>
-  )}
+ <FriendItem items={items}/>
 </ul>
     )
 }
 Friends.propTypes= {
-    friend: PropTypes.array.isRequired
+    friend: PropTypes.array
 }

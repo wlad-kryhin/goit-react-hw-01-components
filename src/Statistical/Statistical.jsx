@@ -9,8 +9,8 @@ export default function Statistical ({title,stats}){
   <ul className={styles.list}>
       {stats.map(({id,label,percentage}) => {
           return(<li className={styles.item} key={id}>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}</span>
+      <span>{label}</span>
+      <span>{percentage}</span>
     </li>)
       })}
   </ul>
